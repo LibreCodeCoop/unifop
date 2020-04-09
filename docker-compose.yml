@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  composer:
+    image: composer
+    volumes:
+      - .:/app
+      - ~/.composer:/root/.composer
+    command: install
+  php7:
+    image: php:fpm
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 80:80
+    command: php -S 0.0.0.0:80 -t /var/www/html
