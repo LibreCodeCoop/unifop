@@ -38,8 +38,8 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-navbar-light {
-	background: transparent!important;
 	position: absolute;
+	height: 70px;
 	left: 0;
 	right: 0;
 	z-index: 3;
@@ -355,7 +355,7 @@ textarea {
 
 }
 .ftco-bg-dark {
-	background: darken(#2A363B, 2%);
+	background: red;
 }
 
 .ftco-footer {
