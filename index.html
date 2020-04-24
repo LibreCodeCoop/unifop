@@ -583,22 +583,23 @@
         var post_url = $(this).attr("action"); //get form action url
 
         var form_data = $(this).serialize(); //Encode form elements for submission        
-
-        $.post( post_url, form_data, function( response ) {                    
-
-          $.each(response, function() {
-            $.each(this, function(k, v) {
+        $.ajax({
+          type: "POST",
+          url: post_url,
+          data: form_data,
+          dataType: "json", // and this
+          success: function (msg) {
+            $("#Success").show();
+          },
+          error: function (xhr) {
+            console.log(xhr)
+            $.each(xhr.responseJSON, function(k, v) {
               var id = v.replace(' ','_')
               $("#"+id).show();
             });
+          }
         });
-
-        });
-      });
-      $(document).ready(function(){
-        $('#birth-date').mask('00/00/0000');
-        $('#phone-number').mask('(00)00000-0000');
-      });            
+      });          
     </script>  
     
   </body>
