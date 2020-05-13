@@ -1,5 +1,7 @@
 # Static site for UNIFOP
 
+> Cooperativa de Saúde Mental e Reabilitação que atua em Petrópolis há 19 anos, nas áreas de fisioterapia, fonoaudiologia, nutrição, terapia ocupacional, psicologia, enfermagem, assistência social e farmácia.
+
 ## Run the application
 
 ```bash
