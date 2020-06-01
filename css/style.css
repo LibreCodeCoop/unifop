@@ -255,8 +255,12 @@ textarea {
   opacity: 0;
   visibility: hidden; }
 
+.ftco-animate h4 {
+  margin-bottom: -30px;
+}
+
 .bg-primary {
-  background: #4586FF !important; }
+  background: rgb(183, 184, 187) !important; }
 
 .ftco-section, .ftco-footer {
   padding: 2em 0 2em 0; }
